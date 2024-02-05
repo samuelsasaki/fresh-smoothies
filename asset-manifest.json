@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/fresh-smoothies/static/css/main.9aff7d39.css",
+    "main.js": "/fresh-smoothies/static/js/main.32e9ed05.js",
+    "static/js/592.be76513e.chunk.js": "/fresh-smoothies/static/js/592.be76513e.chunk.js",
+    "static/media/banner.png": "/fresh-smoothies/static/media/banner.ad4e6b2e4f666b6929ee.png",
+    "static/media/Alpukat.png": "/fresh-smoothies/static/media/Alpukat.363ebf0d23f3daf46a88.png",
+    "static/media/Mangga.png": "/fresh-smoothies/static/media/Mangga.b697b924dae39b714b4b.png",
+    "static/media/buah naga.png": "/fresh-smoothies/static/media/buah naga.d167b6a3fe8c314d8eaa.png",
+    "index.html": "/fresh-smoothies/index.html",
+    "main.9aff7d39.css.map": "/fresh-smoothies/static/css/main.9aff7d39.css.map",
+    "main.32e9ed05.js.map": "/fresh-smoothies/static/js/main.32e9ed05.js.map",
+    "592.be76513e.chunk.js.map": "/fresh-smoothies/static/js/592.be76513e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9aff7d39.css",
+    "static/js/main.32e9ed05.js"
+  ]
+}
