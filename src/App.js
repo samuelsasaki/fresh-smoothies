@@ -55,7 +55,7 @@ return (
             <div className=''>
                         <RevealDownOne>
                 <div className='grid md:grid-flow-col grid-flow-row max-w-[83vw] justify-center h-auto'>
-                    <div className='order-2 bg-[#80e5ff] p-6 text-[#1b7a9f] md:rounded-r-3xl rounded-b-3xl flex items-center flex-col justify-center md:w-[36vw]'>
+                    <div className='order-2 bg-[#80e5ff] p-6 text-[#1b7a9f] md:rounded-r-3xl rounded-b-3xl md:rounded-bl-none flex items-center flex-col justify-center md:w-[36vw]'>
                         <h1 className='text-3xl font-semibold'>
                             About Us
                         </h1>
@@ -85,7 +85,7 @@ return (
                         {/* Fresh Smoothies adalah sebuah minuman yang berasal dari buah- buahan segar yang bisa dinikmati semua kalangan yang bertujuan untuk menyehatkan, seiring dengan cuaca yang sangat panas dan banyak orang yang sakit karena kekurangan vitamin kami membuat minuman yang menyegarkan sekaligus menyehatkan di minuman ini kami menyediakan buah- buahan yang segar dan premium untuk mendapatkan kualitas terbaik dengan harga yang terjangkau semua kalangan. Didalam minuman ini kami menyediakan beberapa buah- buahan yang banyak mengandung vitamin seperti buah Mangga, avocado, strawberry dan masih banyak jenis buah lainnya. Didalam buah mangga terdapat banyak nutrisi yang dapat menyehatkan tubuh contohnya: vitamin B, vitamin K, vitamin A, vitamin C dan vitamin E. Di dalam smoothies ini terdapat parutan keju dan whipcream yang membuat dia berbeda dari smoothies biasanya. */}
                         </p>
                     </div>
-                    <img src={banner} alt='about-us' className='md:rounded-l-3xl rounded-t-3xl w-full h-full'/>
+                    <img src={banner} alt='about-us' className='md:rounded-l-3xl rounded-t-3xl md:rounded-tr-none w-full h-full'/>
                 </div>
                         </RevealDownOne>
             </div>
