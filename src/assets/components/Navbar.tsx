@@ -39,14 +39,14 @@ export const Nav = ({ children }: RevealProps) => {
   return (
     <motion.nav
       variants={{
-        hidden: { y: 0, scale: 1, backgroundColor: "white"},
-        visible: { y: 0, scale: 1.1, backgroundColor: "transparent"},
+        hidden: { y: 0, scale: 1},
+        visible: { y: 0, scale: 1.1},
       }}
       initial="visible"
       animate={scrolled ? "hidden" : "visible"}
       style={{ position: "fixed", top: 0, left: 0, width: "100%", zIndex: 999}}
-      className={`${scrolled ? "shadow-md" : "shadow-none"}`}
-      transition={{ duration: 0.3, ease: "easeInOut" }}
+      className={`${scrolled ? "shadow-md bg-white" : "md:shadow-none shadow-md md:bg-transparent bg-white"}`}
+      transition={{ duration: 0.3, ease: "easeInOut", type: "spring"}}
     >
       {children}
     </motion.nav>

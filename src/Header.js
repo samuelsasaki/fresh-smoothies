@@ -33,20 +33,20 @@ const Header = () => {
   return (
     <Nav>
       <div className="items-center mx-auto justify-between container flex h-20 bg-transparent">
-        <div className="gap-1">
-          <Link href="#home" className="text-2xl">
-            <span className={`${color ? 'text-[#ab0afc]' : 'text-yellow-200'} font-bold`}>FRESH</span>
-            <span className={`${color ? 'text-black' : 'text-white'} font-bold`}>SMOOTHIES</span>
+        <div className="gap-1 z-50">
+          <Link href="#home" className={`text-2xl ${color ? 'pl-10' : 'pl-10'}`}>
+            <span className={`${color ? 'text-[#ab0afc]' : 'md:text-yellow-200 text-[#ab0afc]'} font-bold`}>FRESH</span>
+            <span className={`${color ? 'text-black' : 'md:text-white text-black'} font-bold`}>SMOOTHIES</span>
           </Link>
         </div>
-        <div onClick={()=>setOpen(!open)} className='absolute right-8  cursor-pointer md:hidden w-6 h-6 text-black'>
+        <div onClick={()=>setOpen(!open)} className='absolute right-10  cursor-pointer md:hidden w-6 h-6 text-black '>
                     {
                         open ? <XMarkIcon/> : <Bars3Icon />
                     }
                 </div>
-                <ul className={`md:flex md:items-center md:pb-0 pb-0 absolute md:static md:z-auto z-[-2] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${open ? 'top-24' : 'top-[-490px]'}`}>
+                <ul className={`bg-white md:flex md:items-center md:pb-0 pb-0 absolute md:static md:z-auto z-[-999] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in ${open ? 'top-20' : 'top-[-490px]'}`}>
           { Links.map((link) => (
-            <li className={`${color ? 'text-black' : 'text-yellow-200'} font-bold text-xl ml-8 my-5 md:my-0 cursor-pointer`}><Link to={link.link} offset={link.offset} spy={true} activeClass="active" smooth={true} duration={500} onSetActive={handleSetActive}>{link.name}</Link></li>
+            <li className={`${color ? 'text-black' : 'md:text-yellow-200 text-black'} font-bold text-xl ml-8 my-5 md:my-0 cursor-pointer z-[-999]`}><Link to={link.link} offset={link.offset} spy={true} activeClass="active" smooth={true} duration={500} onSetActive={handleSetActive}>{link.name}</Link></li>
             ))
           }
         </ul>
