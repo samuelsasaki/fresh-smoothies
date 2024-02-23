@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fresh-smoothies/static/css/main.447c343c.css",
-    "main.js": "/fresh-smoothies/static/js/main.8e060334.js",
+    "main.css": "/fresh-smoothies/static/css/main.0757b565.css",
+    "main.js": "/fresh-smoothies/static/js/main.5a1519c6.js",
     "static/js/592.be76513e.chunk.js": "/fresh-smoothies/static/js/592.be76513e.chunk.js",
     "static/media/banner.png": "/fresh-smoothies/static/media/banner.ad4e6b2e4f666b6929ee.png",
     "static/media/mangga3.png": "/fresh-smoothies/static/media/mangga3.3793fd69fc1efa9a7cb6.png",
@@ -10,12 +10,12 @@
     "static/media/buah naga.png": "/fresh-smoothies/static/media/buah naga.d167b6a3fe8c314d8eaa.png",
     "static/media/unnamed-removebg-preview.png": "/fresh-smoothies/static/media/unnamed-removebg-preview.222181ab6953d3896e30.png",
     "index.html": "/fresh-smoothies/index.html",
-    "main.447c343c.css.map": "/fresh-smoothies/static/css/main.447c343c.css.map",
-    "main.8e060334.js.map": "/fresh-smoothies/static/js/main.8e060334.js.map",
+    "main.0757b565.css.map": "/fresh-smoothies/static/css/main.0757b565.css.map",
+    "main.5a1519c6.js.map": "/fresh-smoothies/static/js/main.5a1519c6.js.map",
     "592.be76513e.chunk.js.map": "/fresh-smoothies/static/js/592.be76513e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.447c343c.css",
-    "static/js/main.8e060334.js"
+    "static/css/main.0757b565.css",
+    "static/js/main.5a1519c6.js"
   ]
 }
