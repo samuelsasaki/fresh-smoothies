@@ -15,6 +15,8 @@ module.exports = {
     },
     fontFamily: {
       poppins: ['Poppins'],
+      mont: ['Montserrat'],
+      fredoka: ['Fredoka']
     }
   },
   plugins: [],

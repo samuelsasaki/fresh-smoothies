@@ -6,7 +6,11 @@ import alpukat from './img/Alpukat.png';
 import dragon from './img/buah naga.png';
 import mangga from './img/Mangga.png';
 import banner from './img/banner.png';
-import { RevealDownOne, RevealDownTwo, RevealDownThree, RevealDownTwoText } from './assets/components/Reveal.tsx';
+import mangga2 from './img/unnamed-removebg-preview.png';
+import mangga3 from './img/mangga3.png';
+import { RevealDownOne, RevealDownTwo, RevealDownThree, RevealDownTwoText, RevealDownOneImage, RevealDownOneText } from './assets/components/Reveal.tsx';
+import { CheckCircleIcon } from '@heroicons/react/24/solid';
+import { InstagramEmbed } from 'react-social-media-embed';
 
 
 
@@ -14,80 +18,66 @@ function App() {
 return (
     <div className="App">
     <Header className="z-50"></Header>
-    <div className='flex flex-col min-h-screen font-poppins'>
+    <div className='font-fredoka'>
         <main className='flex-1'>
-        <section id='hero' className="w-full md:py-28 py-36 bg-[#bc3dfd]">
-            <div className="container mx-auto">
-                <div className="items-center flex gap-4 px-4 sm:px-6 md:px-10 md:gap-8 md:flex-row flex-col-reverse">
-                    <div className='flex flex-col md:w-1/2 md:pl-20 px-8 pt-16'>
+        <section id='hero' className="w-full min-h-screen flex justify-center items-center bg-[#bc3dfd]">
+            <div className="">
+                <div className="flex gap-4 px-4 sm:px-6 md:px-10 md:gap-44 md:flex-row flex-col-reverse items-center justify-center">
+                    <div className='flex flex-col md:w-1/2 md:pl-20 px-8 pt-8'>
                         <RevealDownOne>
-                        <div><h1 className='md:text-4xl text-3xl pb-5 text-yellow-200'>Segarkan hidupmu dengan, <span className='font-bold'>FreshSmoothies</span></h1></div>
+                            <div>
+                                <h1 className='md:text-4xl text-3xl pb-5 text-yellow-200'>Segarkan hidupmu dengan, <span className='font-bold'>FreshSmoothies</span></h1>
+                            </div>
                         </RevealDownOne>
                         <RevealDownTwoText>
-                        <div><h3 className='md:text-2xl text-xl  text-white'>Rasakan Nikmatnya Kesehatan di Setiap Teguknya.</h3></div>
+                        <div>
+                            <h3 className='md:text-2xl text-xl  text-white'>Rasakan Nikmatnya Kesehatan di Setiap Teguknya.</h3>
+                        </div>
                         </RevealDownTwoText>
                     </div>
-                    <div className='flex flex-row'>
-                        <div className='flex flex-col'>
-                            <RevealDownOne>
-                                <div className='aspect-square md:w-[16vw] w-[40vw]'>
-                                    <img draggable='false' src={alpukat} alt='alpukat' className='object-cover h-full w-full p-2'/>
-                                </div>
-                            </RevealDownOne>
-                            <RevealDownTwo>
-                                <div className='aspect-3/4 md:w-[16vw] w-[40vw]'>
-                                    <img draggable='false' src={dragon} alt='dragonfruit' className='object-cover h-full w-full p-2'/>
-                                </div>
-                            </RevealDownTwo>
-                        </div>
-                        <div>
-                            <RevealDownThree>
-                            <div className='aspect-3/4 md:w-[16vw] w-[40vw]'>
-                                <img draggable='false' src={mangga} alt='mangga' className='object-cover h-full w-full p-2'/>
-                            </div>
-                            </RevealDownThree>
-                        </div>
+                    <div>
+                            <img draggable='false' src={mangga3} alt='mangga' className='w-[55dvh] rounded-3xl md:pt-0 mt-20 '/>
                     </div>
                 </div>
             </div>
         </section>
-        <section id='aboutus' className='w-full md:min-h-[80vh] min-h-[125vh] bg-white justify-center items-center flex'>
-            <div className=''>
-                        <RevealDownOne>
-                <div className='grid md:grid-flow-col grid-flow-row max-w-[83vw] justify-center h-auto'>
-                    <div className='order-2 bg-[#80e5ff] p-6 text-[#1b7a9f] md:rounded-r-3xl rounded-b-3xl md:rounded-bl-none flex items-center flex-col justify-center md:w-[36vw]'>
-                        <h1 className='text-3xl font-semibold'>
-                            About Us
-                        </h1>
-                        <p className='my-5 w-3/4 items-center'>
-                        <span className='font-semibold text-lg'>Segarnya Buah Segar, Sehatnya Gak Kira-kira!</span>
-                        <br></br>
-                        <span>Minuman segar dan sehat dari buah-buahan premium untuk semua kalangan.</span>
-                        <br></br>
-                        <br></br>
-                        <span className='font-semibold text-lg'>Cuaca panas bikin gampang sakit?</span>
-                        <br></br>
-
-                        Tingkatkan daya tahan tubuhmu dengan Fresh Smoothies! Dibuat dari buah-buahan segar dan premium seperti mangga, alpukat, dan stroberi, Fresh Smoothies kaya akan vitamin dan nutrisi penting.
-                        <br></br>
-                        <br></br>
-                        <span className='font-semibold text-lg'>Lebih dari sekadar segar:</span>
-                        <br></br>
-
-                        • Parutan keju dan whipcream menambah cita rasa unik dan creamy.
-                        <br></br>
-                        • Harga terjangkau untuk semua kalangan.
-                        Fresh Smoothies: Sehatnya gak kira-kira!
-                        <br></br>
-                        <br></br>
-
-                        <strong className='text-lg'>Pesan sekarang dan rasakan segarnya!</strong>
-                        {/* Fresh Smoothies adalah sebuah minuman yang berasal dari buah- buahan segar yang bisa dinikmati semua kalangan yang bertujuan untuk menyehatkan, seiring dengan cuaca yang sangat panas dan banyak orang yang sakit karena kekurangan vitamin kami membuat minuman yang menyegarkan sekaligus menyehatkan di minuman ini kami menyediakan buah- buahan yang segar dan premium untuk mendapatkan kualitas terbaik dengan harga yang terjangkau semua kalangan. Didalam minuman ini kami menyediakan beberapa buah- buahan yang banyak mengandung vitamin seperti buah Mangga, avocado, strawberry dan masih banyak jenis buah lainnya. Didalam buah mangga terdapat banyak nutrisi yang dapat menyehatkan tubuh contohnya: vitamin B, vitamin K, vitamin A, vitamin C dan vitamin E. Di dalam smoothies ini terdapat parutan keju dan whipcream yang membuat dia berbeda dari smoothies biasanya. */}
+        <section id='aboutus' className='w-full md:min-h-[100vh] min-h-[125vh] bg-white justify-center items-center flex'>
+            <div className='flex flex-col items-center justify-center gap-10 m-20'>
+                <h1 className='text-5xl font-semibold text-[#bc3dfd]'>About Us</h1>
+                {/* <div className='flex flex-row gap-32 items-center justify-center'> */}
+                    {/* <img src={banner} alt='banner' className='w-1/2 rounded-3xl'></img> */}
+                    <div className='flex justify-center'>
+                        <InstagramEmbed url="https://www.instagram.com/p/CyYj-_5Roas/" width={328} />
+                    </div>
+                {/* </div> */}
+                <div className='flex md:flex-row flex-col gap-28 items-center text-center text-base flex-wrap justify-center'>
+                    <div className='flex flex-col items-center'>
+                        <CheckCircleIcon className='text-[#bc3dfd] w-10'/>
+                        <p className='md:w-[30rem] w-80'>
+                            <span className='font-semibold text-lg'>Mau Sehat?</span>
+                            <br></br>
+                            Segarnya Buah Segar, Sehatnya Gak Kira-kira! Minuman segar dan sehat dari buah-buahan premium untuk semua kalangan.
                         </p>
                     </div>
-                    <img src={banner} alt='about-us' className='md:rounded-l-3xl rounded-t-3xl md:rounded-tr-none w-full h-full'/>
+                    <div className='flex flex-col items-center'>
+                        <CheckCircleIcon className='text-[#bc3dfd] w-10'/>
+                        <p className='md:w-[30rem] w-80'>
+                        <span className='font-semibold text-lg'>Cuaca panas bikin gampang sakit? </span>
+                        <br></br>
+                        Tingkatkan daya tahan tubuhmu dengan Fresh Smoothies! Dibuat dari buah-buahan segar dan premium seperti mangga, alpukat, dan stroberi, Fresh Smoothies kaya akan vitamin dan nutrisi penting.
+                        </p>
+                    </div>
+                    <div className='flex flex-col items-center'>
+                        <CheckCircleIcon className='text-[#bc3dfd] w-10'/>
+                        <p className='md:w-[30rem] w-80'>
+                        <span className='font-semibold text-lg'>Lebih dari sekadar segar:</span>
+                        <br></br>
+                        • Parutan keju dan whipcream menambah cita rasa unik dan creamy.
+                        <br></br>
+                        • Harga terjangkau untuk semua kalangan. Fresh Smoothies: Sehatnya gak kira-kira!
+                        </p>
+                    </div>
                 </div>
-                        </RevealDownOne>
             </div>
         </section>
         <section id='menu' className='py-20 bg-[#ab0afc] flex flex-col box-border items-center justify-center min-h-screen w-full'>
@@ -106,7 +96,7 @@ return (
                     {/* Content */}
                     <div className='absolute md:bottom-[-50%] p-4 bottom-0 md:group-hover:bottom-0 transition-bottom duration-500 md:opacity-0 md:group-hover:opacity-100'>
                         <h1 className='text-2xl font-semibold text-[#e56ffe]'>Mangga Smoothie <span className='text-white'>•</span> <span className='text-xl'>Rp. 15,000</span></h1>
-                        <p className='text-sm text-justify mt-1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor pretium viverra suspendisse potenti.</p>
+                        <p className='text-sm text-justify mt-1'>Sunshine in a glass! Smoothie mangga ini penuh dengan cita rasa tropis yang segar. Dibuat dengan buah mangga asli, ini adalah cara sempurna untuk menyejukkan hari yang panas atau menikmati camilan yang lezat dan sehat.</p>
                         <button className='mt-2 border-none bg-[#e56ffe] py-2 px-4 rounded-xl'>Order</button>
                     </div>
                 </div>
@@ -121,7 +111,7 @@ return (
                     {/* Content */}
                     <div className='absolute md:bottom-[-50%] p-4 bottom-0 md:group-hover:bottom-0 transition-bottom duration-500 md:opacity-0 md:group-hover:opacity-100'>
                         <h1 className='text-2xl font-semibold text-[#e56ffe]'>Dragonfruit Smoothie <span className='text-white'>•</span> <span className='text-xl'>Rp. 15,000</span></h1>
-                        <p className='text-sm text-justify mt-1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor pretium viverra suspendisse potenti.</p>
+                        <p className='text-sm text-justify mt-1'>Purple paradise! Smoothie naga buah yang memikat ini dipenuhi dengan rasa eksotis dan tampilan yang menakjubkan. Dibuat dengan buah naga segar, susu, dan yogurt, ini adalah cara sempurna untuk mendinginkan diri di hari yang panas atau menikmati camilan yang lezat dan sehat.</p>
                         <button className='mt-2 border-none bg-[#e56ffe] py-2 px-4 rounded-xl'>Order</button>
                     </div>
                 </div>
@@ -136,7 +126,7 @@ return (
                     {/* Content */}
                     <div className='absolute md:bottom-[-50%] p-4 bottom-0 md:group-hover:bottom-0 transition-bottom duration-500 md:opacity-0 md:group-hover:opacity-100'>
                         <h1 className='text-2xl font-semibold text-[#e56ffe]'>Alpukat Smoothie <span className='text-white'>•</span> <span className='text-xl'>Rp. 15,000</span></h1>
-                        <p className='text-sm text-justify mt-1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor pretium viverra suspendisse potenti.</p>
+                        <p className='text-sm text-justify mt-1'>Creamy dream! Smoothie alpukat yang dekaden ini bagaikan spa untuk lidah Anda. Terbuat dari alpukat matang, susu, dan sentuhan manis, ini adalah cara sempurna untuk menikmati camilan yang sehat dan mengenyangkan.</p>
                         <button className='mt-2 border-none bg-[#e56ffe] py-2 px-4 rounded-xl'>Order</button>
                     </div>
                 </div>

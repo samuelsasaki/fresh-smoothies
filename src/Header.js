@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <Nav>
-      <div className="items-center mx-auto justify-between container flex h-20 bg-transparent">
+      <div className="items-center mx-auto justify-between container flex h-20 bg-transparent font-fredoka">
         <div className="gap-1">
           <Link href="#home" className={`text-2xl ${color ? 'pl-10' : 'pl-10'}`}>
             <span className={`${color ? 'text-[#ab0afc]' : 'md:text-yellow-200 text-[#ab0afc]'} font-bold`}>FRESH</span>

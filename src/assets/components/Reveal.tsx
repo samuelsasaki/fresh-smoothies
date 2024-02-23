@@ -167,3 +167,34 @@ export const RevealDownTwoText = ({ children, width = "100%" }: RevealProps) => 
 }
 
 
+export const RevealDownOneText = ({ children, width = "100%" }: RevealProps) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    } else if (!isInView) {
+      mainControls.start("hidden");
+    }
+  }  , [isInView, mainControls]);
+
+  return (
+    <div 
+    ref={ref}
+    style={{ position: "relative", width: width, overflow: "hidden"}}>
+      <motion.span
+        variants={variant1}
+        initial="hidden"
+        whileInView="visible"
+      >
+        {children}
+      </motion.span>
+
+    </div>
+  );
+}
+
+
