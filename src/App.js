@@ -26,8 +26,14 @@ return (
                 <div className="flex gap-4 px-4 sm:px-6 md:px-10 md:gap-44 md:flex-row flex-col-reverse items-center justify-center">
                     <div className='flex flex-col md:w-1/2 md:pl-20 px-8 pt-8'>
                         <RevealDownOne>
-                            <div>
-                                <h1 className='md:text-4xl text-3xl pb-5 text-yellow-200'>Segarkan hidupmu dengan, <span className='font-bold'>FreshSmoothies</span></h1>
+                            <div className='pb-5'>
+                                <div>
+                                <h1 className='md:text-4xl text-3xl pb-5 text-yellow-200'>Segarkan hidupmu dengan,</h1> 
+                                <span className='before:block before:absolute before:-inset-1 before:-skew-y-2 before:bg-black relative inline-block before:shadow-md'>
+                                    <span className='font-bold text-yellow-300 relative md:text-4xl text-3xl italic'>Fresh</span>
+                                    <span className='text-white md:text-4xl text-3xl relative font-bold italic'>Smoothies</span>
+                                </span>
+                                </div>
                             </div>
                         </RevealDownOne>
                         <RevealDownTwoText>
@@ -45,8 +51,7 @@ return (
         <section id='aboutus' className='w-full md:min-h-[100vh] min-h-[125vh] bg-white justify-center items-center flex'>
             <div className='flex flex-col items-center justify-center gap-10 m-20'>
                 <span className='before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[#bc3dfd] relative inline-block before:shadow-md'>
-
-                <h1 className='text-5xl font-semibold text-white relative italic'>About Us</h1>
+                    <h1 className='text-5xl font-semibold text-white relative italic'>About Us</h1>
                 </span>
                 {/* <div className='flex flex-row gap-32 items-center justify-center'> */}
                     {/* <img src={banner} alt='banner' className='w-1/2 rounded-3xl'></img> */}
@@ -85,11 +90,13 @@ return (
             </div>
         </section>
         <section id='menu' className='py-20 bg-[#ab0afc] flex flex-col box-border items-center justify-center min-h-screen w-full'>
-            <h1 className='text-center text-5xl my-10 text-white font-semibold'>
-            Menu
-            </h1>
+            <span className='before:block before:w-36 before:absolute before:-inset-2 before:skew-y-3 before:bg-black relative inline-block before:shadow-md'>
+                <h1 className='text-center text-5xl text-white font-semibold relative italic'>
+                Menu
+                </h1>
+            </span>
            {/* Card Group */}
-            <div className='flex gap-12 text-white flex-wrap md:flex-nowrap'>
+            <div className='flex gap-12 text-white flex-wrap md:flex-nowrap mt-10'>
                 <RevealDownOne>
                 {/* Card */}
                 <div className='overflow-hidden aspect-3/4  relative group card rounded-3xl m-5'>
