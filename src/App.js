@@ -44,14 +44,17 @@ return (
         </section>
         <section id='aboutus' className='w-full md:min-h-[100vh] min-h-[125vh] bg-white justify-center items-center flex'>
             <div className='flex flex-col items-center justify-center gap-10 m-20'>
-                <h1 className='text-5xl font-semibold text-[#bc3dfd]'>About Us</h1>
+                <span className='before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-[#bc3dfd] relative inline-block before:shadow-md'>
+
+                <h1 className='text-5xl font-semibold text-white relative italic'>About Us</h1>
+                </span>
                 {/* <div className='flex flex-row gap-32 items-center justify-center'> */}
                     {/* <img src={banner} alt='banner' className='w-1/2 rounded-3xl'></img> */}
                     <div className='flex justify-center'>
                         <InstagramEmbed url="https://www.instagram.com/p/CyYj-_5Roas/" width={328} />
                     </div>
                 {/* </div> */}
-                <div className='flex md:flex-row flex-col gap-28 items-center text-center text-base flex-wrap justify-center'>
+                <div className='flex md:flex-row flex-col gap-28 md:items-start items-center text-center text-base flex-wrap justify-center'>
                     <div className='flex flex-col items-center'>
                         <CheckCircleIcon className='text-[#bc3dfd] w-10'/>
                         <p className='md:w-[30rem] w-80'>
