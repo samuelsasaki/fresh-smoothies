@@ -11,6 +11,7 @@ import mangga3 from './img/mangga3.png';
 import { RevealDownOne, RevealDownTwo, RevealDownThree, RevealDownTwoText, RevealDownOneImage, RevealDownOneText } from './assets/components/Reveal.tsx';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import { InstagramEmbed } from 'react-social-media-embed';
+import ReactWhatsapp from 'react-whatsapp';
 
 
 
@@ -97,7 +98,7 @@ return (
                     <div className='absolute md:bottom-[-50%] p-4 bottom-0 md:group-hover:bottom-0 transition-bottom duration-500 md:opacity-0 md:group-hover:opacity-100'>
                         <h1 className='text-2xl font-semibold text-[#e56ffe]'>Mangga Smoothie <span className='text-white'>•</span> <span className='text-xl'>Rp. 15,000</span></h1>
                         <p className='text-sm text-justify mt-1'>Sunshine in a glass! Smoothie mangga ini penuh dengan cita rasa tropis yang segar. Dibuat dengan buah mangga asli, ini adalah cara sempurna untuk menyejukkan hari yang panas atau menikmati camilan yang lezat dan sehat.</p>
-                        <button className='mt-2 border-none bg-[#e56ffe] py-2 px-4 rounded-xl'>Order</button>
+                        <ReactWhatsapp number='+62 856-0282-9156' message="Hi kak, mau pesen smoothie mangga nya dong" className='mt-2 border-none bg-[#e56ffe] py-2 px-4 rounded-xl'>Order</ReactWhatsapp>
                     </div>
                 </div>
                 </RevealDownOne>
@@ -112,7 +113,7 @@ return (
                     <div className='absolute md:bottom-[-50%] p-4 bottom-0 md:group-hover:bottom-0 transition-bottom duration-500 md:opacity-0 md:group-hover:opacity-100'>
                         <h1 className='text-2xl font-semibold text-[#e56ffe]'>Dragonfruit Smoothie <span className='text-white'>•</span> <span className='text-xl'>Rp. 15,000</span></h1>
                         <p className='text-sm text-justify mt-1'>Purple paradise! Smoothie naga buah yang memikat ini dipenuhi dengan rasa eksotis dan tampilan yang menakjubkan. Dibuat dengan buah naga segar, susu, dan yogurt, ini adalah cara sempurna untuk mendinginkan diri di hari yang panas atau menikmati camilan yang lezat dan sehat.</p>
-                        <button className='mt-2 border-none bg-[#e56ffe] py-2 px-4 rounded-xl'>Order</button>
+                        <ReactWhatsapp number='+62 856-0282-9156' message="Hi kak, mau pesen smoothie buah naga nya dong" className='mt-2 border-none bg-[#e56ffe] py-2 px-4 rounded-xl'>Order</ReactWhatsapp>
                     </div>
                 </div>
                 </RevealDownTwo>
@@ -127,7 +128,7 @@ return (
                     <div className='absolute md:bottom-[-50%] p-4 bottom-0 md:group-hover:bottom-0 transition-bottom duration-500 md:opacity-0 md:group-hover:opacity-100'>
                         <h1 className='text-2xl font-semibold text-[#e56ffe]'>Alpukat Smoothie <span className='text-white'>•</span> <span className='text-xl'>Rp. 15,000</span></h1>
                         <p className='text-sm text-justify mt-1'>Creamy dream! Smoothie alpukat yang dekaden ini bagaikan spa untuk lidah Anda. Terbuat dari alpukat matang, susu, dan sentuhan manis, ini adalah cara sempurna untuk menikmati camilan yang sehat dan mengenyangkan.</p>
-                        <button className='mt-2 border-none bg-[#e56ffe] py-2 px-4 rounded-xl'>Order</button>
+                        <ReactWhatsapp number='+62 856-0282-9156' message="Hi kak, mau pesen smoothie alpukat nya dong" className='mt-2 border-none bg-[#e56ffe] py-2 px-4 rounded-xl'>Order</ReactWhatsapp>
                     </div>
                 </div>
                 </RevealDownThree>
