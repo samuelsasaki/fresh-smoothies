@@ -43,8 +43,8 @@ return (
                         </RevealDownTwoText>
                     </div>
                     <RevealDownThree2>
-                        <div>
-                                <img draggable='false' src={mangga3} alt='mangga' className='w-[55dvh] rounded-3xl md:pt-0 mt-20 '/>
+                        <div className='pt-20'>
+                                <img draggable='false' src={mangga3} alt='mangga' className='w-[55ch] rounded-3xl'/>
                         </div>
                     </RevealDownThree2>
                 </div>
@@ -59,7 +59,7 @@ return (
                     {/* <img src={banner} alt='banner' className='w-1/2 rounded-3xl'></img> */}
                     <RevealDownOne>
                         <div className='flex justify-center'>
-                            <InstagramEmbed url="https://www.instagram.com/p/CyYj-_5Roas/" width={500} />
+                            <InstagramEmbed url="https://www.instagram.com/p/CyYj-_5Roas/" className='w-[328px] md:w-[500px]' />
                         </div>
                     </RevealDownOne>
                 {/* </div> */}
