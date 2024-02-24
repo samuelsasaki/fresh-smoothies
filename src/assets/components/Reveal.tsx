@@ -4,6 +4,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 interface RevealProps {
   children: JSX.Element;
   width: "100%";
+  width2: "inherit";
 } 
 
 const variant1 = {
@@ -76,6 +77,38 @@ export const RevealDownOne = ({ children, width = "100%" }: RevealProps) => {
   );
 }
 
+
+export const RevealDownOne2 = ({ children, width2 = "inherit" }: RevealProps) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    } else if (!isInView) {
+      mainControls.start("hidden");
+    }
+  }  , [isInView, mainControls]);
+
+  return (
+    <div 
+    ref={ref}
+    style={{ position: "relative", width: width2, overflow: "hidden"}}>
+      <motion.div
+        variants={variant1}
+        initial="hidden"
+        whileInView="visible"
+      >
+        {children}
+      </motion.div>
+
+    </div>
+  );
+}
+
+
 export const RevealDownTwo = ({ children, width = "100%" }: RevealProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref);
@@ -106,6 +139,37 @@ export const RevealDownTwo = ({ children, width = "100%" }: RevealProps) => {
   );
 }
 
+export const RevealDownTwo2 = ({ children, width2 = "inherit" }: RevealProps) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    } else if (!isInView) {
+      mainControls.start("hidden");
+    }
+  }  , [isInView, mainControls]);
+
+  return (
+    <div 
+    ref={ref}
+    style={{ position: "relative", width: width2, overflow: "hidden"}}>
+      <motion.div
+        variants={variant2}
+        initial="hidden"
+        whileInView="visible"
+      >
+        {children}
+      </motion.div>
+
+    </div>
+  );
+}
+
+
 export const RevealDownThree = ({ children, width = "100%" }: RevealProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref);
@@ -124,6 +188,36 @@ export const RevealDownThree = ({ children, width = "100%" }: RevealProps) => {
     <div 
     ref={ref}
     style={{ position: "relative", width: width, overflow: "hidden"}}>
+      <motion.div
+        variants={variant3}
+        initial="hidden"
+        whileInView="visible"
+      >
+        {children}
+      </motion.div>
+
+    </div>
+  );
+}
+
+export const RevealDownThree2 = ({ children, width2 = "inherit" }: RevealProps) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    } else if (!isInView) {
+      mainControls.start("hidden");
+    }
+  }  , [isInView, mainControls]);
+
+  return (
+    <div 
+    ref={ref}
+    style={{ position: "relative", width: width2, overflow: "hidden"}}>
       <motion.div
         variants={variant3}
         initial="hidden"

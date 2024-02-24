@@ -10,7 +10,6 @@ const Header = () => {
     {name:"Home",link:"hero", offset: 0},
     {name:"About Us",link:"aboutus", offset: -75},
     {name:"Menu",link:"menu", offset: 50},
-    {name:"Contact",link:"/", offset: 0},
   ];
 
   let [open, setOpen] = useState(false);

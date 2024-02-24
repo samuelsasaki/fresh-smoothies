@@ -8,7 +8,7 @@ import mangga from './img/Mangga.png';
 import banner from './img/banner.png';
 import mangga2 from './img/unnamed-removebg-preview.png';
 import mangga3 from './img/mangga3.png';
-import { RevealDownOne, RevealDownTwo, RevealDownThree, RevealDownTwoText, RevealDownOneImage, RevealDownOneText } from './assets/components/Reveal.tsx';
+import { RevealDownOne, RevealDownTwo, RevealDownThree, RevealDownTwoText, RevealDownOneImage, RevealDownOneText, RevealDownThree2 } from './assets/components/Reveal.tsx';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import { InstagramEmbed } from 'react-social-media-embed';
 import ReactWhatsapp from 'react-whatsapp';
@@ -42,9 +42,11 @@ return (
                         </div>
                         </RevealDownTwoText>
                     </div>
-                    <div>
-                            <img draggable='false' src={mangga3} alt='mangga' className='w-[55dvh] rounded-3xl md:pt-0 mt-20 '/>
-                    </div>
+                    <RevealDownThree2>
+                        <div>
+                                <img draggable='false' src={mangga3} alt='mangga' className='w-[55dvh] rounded-3xl md:pt-0 mt-20 '/>
+                        </div>
+                    </RevealDownThree2>
                 </div>
             </div>
         </section>
@@ -55,9 +57,11 @@ return (
                 </span>
                 {/* <div className='flex flex-row gap-32 items-center justify-center'> */}
                     {/* <img src={banner} alt='banner' className='w-1/2 rounded-3xl'></img> */}
-                    <div className='flex justify-center'>
-                        <InstagramEmbed url="https://www.instagram.com/p/CyYj-_5Roas/" width={328} />
-                    </div>
+                    <RevealDownOne>
+                        <div className='flex justify-center'>
+                            <InstagramEmbed url="https://www.instagram.com/p/CyYj-_5Roas/" width={500} />
+                        </div>
+                    </RevealDownOne>
                 {/* </div> */}
                 <div className='flex md:flex-row flex-col gap-28 md:items-start items-center text-center text-base flex-wrap justify-center'>
                     <div className='flex flex-col items-center'>
@@ -89,12 +93,15 @@ return (
                 </div>
             </div>
         </section>
+        <section>
+            
+        </section>
         <section id='menu' className='py-20 bg-[#ab0afc] flex flex-col box-border items-center justify-center min-h-screen w-full'>
-            <span className='before:block before:w-36 before:absolute before:-inset-2 before:skew-y-3 before:bg-black relative inline-block before:shadow-md'>
-                <h1 className='text-center text-5xl text-white font-semibold relative italic'>
-                Menu
-                </h1>
-            </span>
+                <span className='before:block before:w-36 before:absolute before:-inset-2 before:skew-y-3 before:bg-black relative inline-block before:shadow-md'>
+                    <h1 className='text-center text-5xl text-white font-semibold relative italic'>
+                    Menu
+                    </h1>
+                </span>
            {/* Card Group */}
             <div className='flex gap-12 text-white flex-wrap md:flex-nowrap mt-10'>
                 <RevealDownOne>
@@ -108,7 +115,7 @@ return (
                     <div className='absolute md:bottom-[-50%] p-4 bottom-0 md:group-hover:bottom-0 transition-bottom duration-500 md:opacity-0 md:group-hover:opacity-100'>
                         <h1 className='text-2xl font-semibold text-[#e56ffe]'>Mangga Smoothie <span className='text-white'>•</span> <span className='text-xl'>Rp. 15,000</span></h1>
                         <p className='text-sm text-justify mt-1'>Sunshine in a glass! Smoothie mangga ini penuh dengan cita rasa tropis yang segar. Dibuat dengan buah mangga asli, ini adalah cara sempurna untuk menyejukkan hari yang panas atau menikmati camilan yang lezat dan sehat.</p>
-                        <ReactWhatsapp number='+62 856-0282-9156' message="Hi kak, mau pesen smoothie mangga nya dong" className='mt-2 border-none bg-[#e56ffe] py-2 px-4 rounded-xl'>Order</ReactWhatsapp>
+                        <ReactWhatsapp number='+62 856-0282-9156' message="Hi kak, mau pesen smoothie mango nya dong" className='mt-2 border-none bg-[#e56ffe] py-2 px-4 rounded-xl'>Order</ReactWhatsapp>
                     </div>
                 </div>
                 </RevealDownOne>
@@ -123,7 +130,7 @@ return (
                     <div className='absolute md:bottom-[-50%] p-4 bottom-0 md:group-hover:bottom-0 transition-bottom duration-500 md:opacity-0 md:group-hover:opacity-100'>
                         <h1 className='text-2xl font-semibold text-[#e56ffe]'>Dragonfruit Smoothie <span className='text-white'>•</span> <span className='text-xl'>Rp. 15,000</span></h1>
                         <p className='text-sm text-justify mt-1'>Purple paradise! Smoothie naga buah yang memikat ini dipenuhi dengan rasa eksotis dan tampilan yang menakjubkan. Dibuat dengan buah naga segar, susu, dan yogurt, ini adalah cara sempurna untuk mendinginkan diri di hari yang panas atau menikmati camilan yang lezat dan sehat.</p>
-                        <ReactWhatsapp number='+62 856-0282-9156' message="Hi kak, mau pesen smoothie buah naga nya dong" className='mt-2 border-none bg-[#e56ffe] py-2 px-4 rounded-xl'>Order</ReactWhatsapp>
+                        <ReactWhatsapp number='+62 856-0282-9156' message="Hi kak, mau pesen smoothie dragon fruit nya dong" className='mt-2 border-none bg-[#e56ffe] py-2 px-4 rounded-xl'>Order</ReactWhatsapp>
                     </div>
                 </div>
                 </RevealDownTwo>
@@ -138,7 +145,7 @@ return (
                     <div className='absolute md:bottom-[-50%] p-4 bottom-0 md:group-hover:bottom-0 transition-bottom duration-500 md:opacity-0 md:group-hover:opacity-100'>
                         <h1 className='text-2xl font-semibold text-[#e56ffe]'>Alpukat Smoothie <span className='text-white'>•</span> <span className='text-xl'>Rp. 15,000</span></h1>
                         <p className='text-sm text-justify mt-1'>Creamy dream! Smoothie alpukat yang dekaden ini bagaikan spa untuk lidah Anda. Terbuat dari alpukat matang, susu, dan sentuhan manis, ini adalah cara sempurna untuk menikmati camilan yang sehat dan mengenyangkan.</p>
-                        <ReactWhatsapp number='+62 856-0282-9156' message="Hi kak, mau pesen smoothie alpukat nya dong" className='mt-2 border-none bg-[#e56ffe] py-2 px-4 rounded-xl'>Order</ReactWhatsapp>
+                        <ReactWhatsapp number='+62 856-0282-9156' message="Hi kak, mau pesen smoothie avocado nya dong" className='mt-2 border-none bg-[#e56ffe] py-2 px-4 rounded-xl'>Order</ReactWhatsapp>
                     </div>
                 </div>
                 </RevealDownThree>
