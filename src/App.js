@@ -8,7 +8,7 @@ import mangga from './img/Mangga.png';
 import banner from './img/banner.png';
 import mangga2 from './img/unnamed-removebg-preview.png';
 import mangga3 from './img/mangga3.png';
-import { RevealDownOne, RevealDownTwo, RevealDownThree, RevealDownTwoText, RevealDownOneImage, RevealDownOneText, RevealDownThree2 } from './assets/components/Reveal.tsx';
+import { RevealDownOne, RevealDownTwo, RevealDownThree, RevealDownTwoText, RevealDownOneImage, RevealDownOneText, RevealDownThree2, RevealDownOne2, RevealDownTwo2 } from './assets/components/Reveal.tsx';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import { InstagramEmbed } from 'react-social-media-embed';
 import ReactWhatsapp from 'react-whatsapp';
@@ -64,32 +64,38 @@ return (
                     </RevealDownOne>
                 {/* </div> */}
                 <div className='flex md:flex-row flex-col gap-28 md:items-start items-center text-center text-base flex-wrap justify-center'>
-                    <div className='flex flex-col items-center'>
-                        <CheckCircleIcon className='text-[#bc3dfd] w-10'/>
-                        <p className='md:w-[30rem] w-80'>
-                            <span className='font-semibold text-lg'>Mau Sehat?</span>
+                    <RevealDownOne2>
+                        <div className='flex flex-col items-center'>
+                            <CheckCircleIcon className='text-[#bc3dfd] w-10'/>
+                            <p className='md:w-[30rem] w-80'>
+                                <span className='font-semibold text-lg'>Mau Sehat?</span>
+                                <br></br>
+                                Segarnya Buah Segar, Sehatnya Gak Kira-kira! Minuman segar dan sehat dari buah-buahan premium untuk semua kalangan.
+                            </p>
+                        </div>
+                    </RevealDownOne2>
+                    <RevealDownTwo2>
+                        <div className='flex flex-col items-center'>
+                            <CheckCircleIcon className='text-[#bc3dfd] w-10'/>
+                            <p className='md:w-[30rem] w-80'>
+                            <span className='font-semibold text-lg'>Cuaca panas bikin gampang sakit? </span>
                             <br></br>
-                            Segarnya Buah Segar, Sehatnya Gak Kira-kira! Minuman segar dan sehat dari buah-buahan premium untuk semua kalangan.
-                        </p>
-                    </div>
-                    <div className='flex flex-col items-center'>
-                        <CheckCircleIcon className='text-[#bc3dfd] w-10'/>
-                        <p className='md:w-[30rem] w-80'>
-                        <span className='font-semibold text-lg'>Cuaca panas bikin gampang sakit? </span>
-                        <br></br>
-                        Tingkatkan daya tahan tubuhmu dengan Fresh Smoothies! Dibuat dari buah-buahan segar dan premium seperti mangga, alpukat, dan stroberi, Fresh Smoothies kaya akan vitamin dan nutrisi penting.
-                        </p>
-                    </div>
-                    <div className='flex flex-col items-center'>
-                        <CheckCircleIcon className='text-[#bc3dfd] w-10'/>
-                        <p className='md:w-[30rem] w-80'>
-                        <span className='font-semibold text-lg'>Lebih dari sekadar segar:</span>
-                        <br></br>
-                        • Parutan keju dan whipcream menambah cita rasa unik dan creamy.
-                        <br></br>
-                        • Harga terjangkau untuk semua kalangan. Fresh Smoothies: Sehatnya gak kira-kira!
-                        </p>
-                    </div>
+                            Tingkatkan daya tahan tubuhmu dengan Fresh Smoothies! Dibuat dari buah-buahan segar dan premium seperti mangga, alpukat, dan stroberi, Fresh Smoothies kaya akan vitamin dan nutrisi penting.
+                            </p>
+                        </div>
+                    </RevealDownTwo2>
+                    <RevealDownThree2>
+                        <div className='flex flex-col items-center'>
+                            <CheckCircleIcon className='text-[#bc3dfd] w-10'/>
+                            <p className='md:w-[30rem] w-80'>
+                            <span className='font-semibold text-lg'>Lebih dari sekadar segar:</span>
+                            <br></br>
+                            • Parutan keju dan whipcream menambah cita rasa unik dan creamy.
+                            <br></br>
+                            • Harga terjangkau untuk semua kalangan. Fresh Smoothies: Sehatnya gak kira-kira!
+                            </p>
+                        </div>
+                    </RevealDownThree2>
                 </div>
             </div>
         </section>
